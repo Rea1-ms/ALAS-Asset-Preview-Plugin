@@ -1,0 +1,25 @@
+{
+  "name": "alas-asset-preview-plugin",
+  "version": "0.1.4",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "node scripts/tasks.cjs build",
+    "test": "node scripts/tasks.cjs test",
+    "build:pycharm": "node scripts/tasks.cjs pycharm-build",
+    "test:pycharm": "node scripts/tasks.cjs pycharm-test",
+    "build:vscode": "node vscode/scripts/build.cjs",
+    "test:vscode": "node --test vscode/test/*.test.cjs",
+    "test:vscode:host": "node scripts/tasks.cjs vscode-host",
+    "package:vscode": "node vscode/scripts/package.cjs"
+  },
+  "dependencies": {
+    "@lezer/python": "1.1.18",
+    "pngjs": "7.0.0"
+  },
+  "devDependencies": {
+    "@vscode/test-electron": "2.5.2",
+    "@vscode/vsce": "3.6.2",
+    "esbuild": "0.25.12"
+  }
+}

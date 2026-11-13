@@ -1,0 +1,9 @@
+.cache/
+dist/
+node_modules/
+.idea/*
+!.idea/runConfigurations/
+.vscode/
+*.log
+.env
+.env.*

@@ -1,0 +1,14 @@
+<idea-plugin>
+  <id>autoepicseven.asset.preview.checks</id>
+  <name>AutoEpicSeven Asset Preview Checks</name>
+  <version>0.1.0</version>
+  <vendor>AutoEpicSeven contributors</vendor>
+  <idea-version since-build="263" until-build="263.*"/>
+  <depends>com.intellij.modules.platform</depends>
+  <depends>autoepicseven.asset.preview</depends>
+  <depends>PythonCore</depends>
+  <depends>com.intellij.platform.images</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <appStarter id="asset-preview-checks" implementation="autoepicseven.preview.IdeChecks"/>
+  </extensions>
+</idea-plugin>

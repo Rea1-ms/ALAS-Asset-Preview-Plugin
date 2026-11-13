@@ -1,0 +1,19 @@
+<idea-plugin>
+  <id>autoepicseven.asset.preview</id>
+  <name>ALAS Asset Preview</name>
+  <version>0.1.4</version>
+  <vendor>AutoEpicSeven contributors</vendor>
+  <description><![CDATA[
+    Preview ALAS-style ButtonWrapper and Button images in Python quick documentation and mouse hover.
+    Reads static asset definitions without importing Python code or connecting to a device.
+  ]]></description>
+  <idea-version since-build="263" until-build="263.*"/>
+  <depends>com.intellij.modules.platform</depends>
+  <depends>PythonCore</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <platform.backend.documentation.targetProvider
+      implementation="autoepicseven.preview.AssetDocumentationTargetProvider" order="first"/>
+    <lang.documentationProvider language="Python"
+      implementationClass="autoepicseven.preview.AssetDocumentationProvider" order="first"/>
+  </extensions>
+</idea-plugin>

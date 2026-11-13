@@ -1,0 +1,16 @@
+{
+  "name": "alas-asset-preview",
+  "displayName": "ALAS Asset Preview",
+  "description": "Preview ALAS-style Python assets on hover and open their source images.",
+  "version": "0.1.4",
+  "publisher": "Rea1-ms",
+  "license": "UNLICENSED",
+  "engines": { "vscode": "^1.96.0" },
+  "categories": ["Other"],
+  "keywords": ["ALAS", "assets", "Python", "image", "hover"],
+  "repository": { "type": "git", "url": "https://github.com/Rea1-ms/ALAS-Asset-Preview-Plugin.git" },
+  "main": "./dist/extension.cjs",
+  "activationEvents": ["onLanguage:python"],
+  "capabilities": { "untrustedWorkspaces": { "supported": true }, "virtualWorkspaces": false },
+  "contributes": { "commands": [{ "command": "alasAssetPreview.openSource", "title": "ALAS 素材预览：打开原图" }] }
+}
